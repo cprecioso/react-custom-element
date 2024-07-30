@@ -1,0 +1,8 @@
+{
+  "include": ["./src/**/*"],
+  "extends": "@cprecioso/tsconfig/bundler",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["@vitest/browser/providers/playwright"]
+  }
+}

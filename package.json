@@ -1,0 +1,46 @@
+{
+  "name": "@cprecioso/react-custom-element",
+  "private": true,
+  "packageManager": "yarn@4.3.1",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "esnext": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "./dist/**"
+  ],
+  "scripts": {
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@cprecioso/tsconfig": "^2.0.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@total-typescript/shoehorn": "^0.1.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitest/browser": "^2.0.4",
+    "playwright": "^1.45.3",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-pkg": "^0.18.1",
+    "prettier-plugin-sh": "^0.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shadow-dom-testing-library": "^1.11.2",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.4"
+  }
+}
