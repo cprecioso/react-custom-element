@@ -18,7 +18,7 @@ test("passes props", () => {
   within(container).getByShadowText("Hello Carlos");
 });
 
-test.only("reacts on prop change", () => {
+test("reacts on prop change", () => {
   const CustomElement = define(
     createCustomElement(["name"], ({ name }) => <p>Hello {name}</p>),
   );
