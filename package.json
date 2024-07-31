@@ -38,6 +38,7 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
     "@cprecioso/tsconfig": "^2.0.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.0",

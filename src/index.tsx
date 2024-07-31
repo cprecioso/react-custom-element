@@ -1,5 +1,5 @@
-import { ComponentType, ReactNode } from "react";
-import { Root, RootOptions, createRoot } from "react-dom/client";
+import type { ComponentType, ReactNode } from "react";
+import { type Root, type RootOptions, createRoot } from "react-dom/client";
 
 /**
  * Turns a React component into a DOM Custom Element.

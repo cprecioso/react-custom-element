@@ -3,6 +3,7 @@ import { fromAny } from "@total-typescript/shoehorn";
 declare global {
   namespace JSX {
     interface IntrinsicElements {
+      // biome-ignore lint/suspicious/noExplicitAny: We will accept any props for it
       "custom-element-not-real": any;
     }
   }
