@@ -6,7 +6,6 @@ name: Publish
 
 jobs:
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
 
     permissions:
@@ -33,7 +32,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
   publish-docs:
-    needs: build
     runs-on: ubuntu-latest
 
     permissions:
