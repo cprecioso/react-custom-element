@@ -25,10 +25,10 @@ jobs:
           release-type: node
 
     outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
+      release_created: ${{ steps.release-please.outputs.release_created }}
 
   publish:
     needs: [build, release]
     uses: ./.github/workflows/publish.yml
     secrets: inherit
-    if: ${{ needs.release-please.outputs.release_created }}
+    if: ${{ needs.release.outputs.release_created }}
