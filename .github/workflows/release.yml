@@ -29,7 +29,7 @@ jobs:
       release_created: ${{ steps.release-please.outputs.release_created }}
 
   publish:
-    needs: [build, release-please]
+    needs: [build, release]
     uses: ./.github/workflows/publish.yml
     secrets: inherit
     if: ${{ needs.release-please.outputs.release_created }}
