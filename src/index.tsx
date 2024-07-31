@@ -42,8 +42,12 @@ export const createCustomElement = <
 ): CustomElementConstructor => {
   type PropName = PropNamesArray[number];
 
+  const ComponentDisplayName =
+    Component.displayName || Component.name || "React";
+
   class ReactCustomElement extends HTMLElement {
     static observedAttributes = propNames;
+    static displayName = `${ComponentDisplayName}CustomElement`;
 
     #reactRoot?: Root;
     #props = new Map<PropName, string | undefined>();
@@ -77,9 +81,6 @@ export const createCustomElement = <
       this.#render();
     }
   }
-
-  const displayName = Component.displayName || Component.name;
-  if (displayName) Object.assign(ReactCustomElement, { displayName });
 
   return ReactCustomElement;
 };
