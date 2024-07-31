@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/cprecioso/react-custom-element/compare/v1.1.0...v1.1.1) (2024-07-31)
+
+
+### Bug Fixes
+
+* fix publishing ([9b75d2d](https://github.com/cprecioso/react-custom-element/commit/9b75d2d369d348ff1e5bbb4f361c74cbabb8aa9b))
+
 ## [1.1.0](https://github.com/cprecioso/react-custom-element/compare/v1.0.1...v1.1.0) (2024-07-31)
 
 
