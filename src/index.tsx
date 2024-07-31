@@ -1,15 +1,37 @@
 import { ComponentType, ReactNode } from "react";
 import { Root, RootOptions, createRoot } from "react-dom/client";
 
+/**
+ * Turns a React component into a DOM Custom Element.
+ *
+ * @remark You probably will want to `customElements.define()`
+ * in order to use it in your HTML.
+ */
 export const createCustomElement = <
   const PropNamesArray extends readonly Exclude<string, "children">[],
 >(
+  /**
+   * An array of the attributes that your custom element
+   * will accept and react to.
+   */
   propNames: PropNamesArray,
+
+  /**
+   * Your React component. It will get the props declared in the `propNames`
+   * argument, and any updates to them.
+   *
+   * It will also get a `children` prop with the `<slot>` component.
+   */
   Component: ComponentType<
     { [PropName in PropNamesArray[number]]?: string | undefined } & {
       children: ReactNode;
     }
   >,
+
+  /**
+   * Any options you want to pass to the DOM's `attachShadow` and
+   * React's `createRoot`.
+   */
   {
     shadowRootOptions = { mode: "open" },
     reactRootOptions,
