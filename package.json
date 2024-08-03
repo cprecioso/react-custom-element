@@ -12,7 +12,7 @@
   },
   "author": "Carlos Precioso <github@precioso.design>",
   "license": "MIT",
-  "packageManager": "yarn@4.3.1",
+  "packageManager": "yarn@4.4.0",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "exports": {
