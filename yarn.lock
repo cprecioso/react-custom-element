@@ -3081,11 +3081,11 @@ __metadata:
   linkType: hard
 
 "shadow-dom-testing-library@npm:^1.11.2":
-  version: 1.11.2
-  resolution: "shadow-dom-testing-library@npm:1.11.2"
+  version: 1.11.3
+  resolution: "shadow-dom-testing-library@npm:1.11.3"
   peerDependencies:
     "@testing-library/dom": ">= 8"
-  checksum: 10c0/3957925bfc3e7a7e909027427da592a98717d586657d8f933896085a6cb572905ac429f5af603aca231c7a0f4dea15b1835ae0173b510f568f491526ed8f5362
+  checksum: 10c0/d546c9a18994f68d30369da743e13ab1388a57f15b9da898653af74f828734b58a35444844dd1ae84f9eb15ee09b06e44e0057f215e5847fa05f7b77cacc4029
   languageName: node
   linkType: hard
 
